@@ -15,6 +15,7 @@ const Menu = () => {
 
   const[Showcatagories, setAllcatagories] = useState(false);
   const[Showaccount, setShowaccount] = useState(false);
+  const[ShowaCart, setShowaCart] = useState(false);
 
 
   // Handlecatagories function start here 
@@ -26,6 +27,12 @@ const Menu = () => {
    // HandleAccount function start here
    const HandleAccount = () =>{
     setShowaccount(!Showaccount);
+   };
+
+   // HandleCart function start here
+
+   const HandleCart = () =>{
+    setShowaCart(!ShowaCart);
    };
 
 
@@ -111,24 +118,24 @@ const Menu = () => {
                 )}
               </div>
               <div className="ml-3">
-                <FaCartShopping />
+                <FaCartShopping onClick={HandleCart} />
               </div>
-              <div>
+              {ShowaCart && (
                 <div>
-                  <Flex className={"items-center gap-x-3"}>
-                    <picture className="w-[80px] h-[80px]">
-                      <img src={CartPic} alt={CartPic} />
-                    </picture>
-                    <div>
-                      <h2>Black smart Watch</h2>
-                      <span>$44.00</span>
-                    </div>
-                  </Flex>
+                  <div>
+                    <Flex className={"items-center gap-x-3"}>
+                      <picture className="w-[80px] h-[80px]">
+                        <img src={CartPic} alt={CartPic} />
+                      </picture>
+                      <div>
+                        <h2>Black smart Watch</h2>
+                        <span>$44.00</span>
+                      </div>
+                    </Flex>
+                  </div>
+                  <div></div>
                 </div>
-                <div>
-                  
-                </div>
-              </div>
+              )}
             </Flex>
           </Flex>
         </div>
