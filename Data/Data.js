@@ -138,3 +138,45 @@ export const SpecialofferData = [
         discount : "10%",
     },
 ];
+
+export const CattagoryData = [
+  {
+    id: 1,
+    title: "Mobile",
+    subcategory: [
+      { id: 1, title: "Samsung" },
+      { id: 2, title: "Oppo" },
+      { id: 3, title: "Vivo" },
+    ],
+  },
+
+  {
+    id: 2,
+    title: "Apple",
+    subcategory: []
+  },
+
+  {
+    id: 3,
+    title: "Laptop",
+    subcategory: [
+      { id: 1, title: "Lenevo" },
+      { id: 2, title: "Dell" },
+      { id: 3, title: "Asus" },
+      { id: 4, title: "Hp" },
+    ],
+  },
+
+  {
+    id: 4,
+    title: "Category 4",
+    subcategory: []
+  },
+
+  {
+    id: 5,
+    title: "Category 5",
+    subcategory: []
+  },
+  
+];
