@@ -169,14 +169,40 @@ export const CattagoryData = [
 
   {
     id: 4,
-    title: "Category 4",
+    title: "Desktop",
     subcategory: []
   },
 
   {
     id: 5,
-    title: "Category 5",
+    title: "Cloth",
     subcategory: []
   },
   
 ];
+
+export const ShopByColor = [
+  { id: 1, ColorCode: "#000000", title: "Black"},
+  { id: 2, ColorCode: "#FF8686", title: "Pink" },
+  { id: 3, ColorCode: "#7ED321", title: "Green" },
+  { id: 4, ColorCode: "#B6B6B6", title: "Offwhite" },
+  { id: 5, ColorCode: "#15CBA5", title: "Blue" },
+];
+
+export const ShopByBrand = [
+  { id: 1, title: "Brand 1"},
+  { id: 2, title: "Brand 2" },
+  { id: 3, title: "Brand 3" },
+  { id: 4, title: "Brand 4" },
+  { id: 5, title: "Brand 5" },
+];
+
+
+export const ShopByPrice = [
+  { id: 1, title: "$0.00 - $9.99"},
+  { id: 2, title: "$10.00 - $19.99" },
+  { id: 3, title: "$20.00 - $29.99" },
+  { id: 4, title: "$30.00 - $39.99" },
+  { id: 5, title: "$40.00 - $69.99" },
+];
+

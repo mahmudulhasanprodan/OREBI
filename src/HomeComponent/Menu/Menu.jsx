@@ -38,7 +38,7 @@ const Menu = () => {
 
   return (
     <>
-      <div className="bg-secondary_bg_color py-2 sm:py-8">
+      <div className="bg-secondary_bg_color py-2 sm:py-4">
         <div className="container">
           <Flex className={"justify-between items-center pt-16 sm:py-10"}>
             <Flex className={"items-center gap-x-3 px-3 sm:px-0 md:px-3"}>
