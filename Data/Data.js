@@ -206,3 +206,21 @@ export const ShopByPrice = [
   { id: 5, title: "$40.00 - $69.99" },
 ];
 
+export const ShortByItem = [
+  { id: 1, shortItem: "Phone"},
+  { id: 2, shortItem: "Cloths"},
+  { id: 3, shortItem: "Sunglass"},
+  { id: 4, shortItem: "Bags"},
+  { id: 4, shortItem: "Women"},
+  
+];
+
+export const ShoptByItem = [
+  { id: 1, shortItem: 20},
+  { id: 2, shortItem: 36},
+  { id: 3, shortItem: 40},
+  { id: 4, shortItem: 25},
+  { id: 4, shortItem: 22},
+  
+];
+
