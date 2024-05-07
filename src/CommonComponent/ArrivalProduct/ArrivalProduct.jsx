@@ -6,14 +6,14 @@ import { FaShoppingCart } from "react-icons/fa";
 
 
 
-const ArrivalProduct = ({ColorVarient, baze, Image}) => {
+const ArrivalProduct = ({ColorVarient, baze, Image,ProductName,ProductPrice}) => {
   return (
     <>
       <div className="w-[95%] py-8 m-auto">
         <div className="relative overflow-hidden cursor-pointer group">
           <div className="absolute top-5 left-5">{baze}</div>
           <picture>
-            <img src={Image} alt={Image} />
+            <img src={Image} alt={Image} className="h-[260px] w-[100%]"/> 
           </picture>
           <div className="w-full p-4 absolute bg-main_bg_color -bottom-[150px] left-0 group-hover:bottom-0 transition-all">
             <Flex className={"items-center justify-end gap-x-4 right-3"}>
@@ -40,9 +40,11 @@ const ArrivalProduct = ({ColorVarient, baze, Image}) => {
         </div>
         <Flex className={"justify-between items-center py-6"}>
           <h2 className="font-DMsans text-main_font_color font-bold">
-            Basic Crew Neck Tee
+            {ProductName ? ProductName : "Basic Crew Neck Tee"}      
           </h2>
-          <p className="font-DMsans text-secondary_font_color">$44.00</p>
+          <p className="font-DMsans text-secondary_font_color">
+            {ProductPrice ? `$${ProductPrice}` : "$44.00"}
+          </p>
         </Flex>
         <div>
           {ColorVarient && (
